@@ -1,0 +1,223 @@
+a {
+  text-decoration: none;
+}
+.header {
+  background-color: var(--white-text);
+  width: 1600px;
+  height: 80px;
+  display: flex;
+}
+.logo-web {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  color: var(--blue-text);
+  font-size: 26px;
+  letter-spacing: 0.03em;
+  line-height: 1.15;
+}
+.logo-studio {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  color: var(--black-dark-text);
+  font-size: 26px;
+  letter-spacing: 0.03em;
+  line-height: 1.15;
+}
+.logo-studio-white {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  color: var(--white-text);
+  font-size: 26px;
+  letter-spacing: 0.03em;
+}
+.active .nav {
+  font-family: "roboto";
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--blue-text);
+  letter-spacing: 0.02em;
+}
+.nav {
+  font-family: "roboto";
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--black-text);
+  letter-spacing: 0.02em;
+}
+.nav-contacts:hover {
+  font-family: "roboto";
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--blue-text);
+  letter-spacing: 0.02em;
+}
+.nav-contacts {
+  font-family: "roboto";
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--grey-text);
+  letter-spacing: 0.02em;
+}
+.hero {
+  background-color: var(--dark-grey-bac);
+  width: 1600px;
+  height: 600px;
+}
+.hero-text {
+  font-family: "roboto";
+  font-size: 60px;
+  font-weight: 900;
+  color: var(--white-text);
+  text-transform: uppercase;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+}
+.button-bac {
+  background-color: var(--blue-text);
+  width: 200px;
+  height: 50px;
+}
+.button-bac:hover {
+  background-color: var(--white-text);
+  width: 200px;
+  height: 50px;
+  border: 0;
+}
+.button-zakaz {
+  font-family: "roboto";
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--white-text);
+  letter-spacing: 0.06em;
+  line-height: 1.87;
+}
+.button-zakaz:hover {
+  width: 200px;
+  height: 50px;
+  color: var(--blue-text);
+  letter-spacing: 0.06em;
+}
+.hide {
+  height: 0px;
+  overflow: hidden;
+}
+.approach {
+  font-family: "roboto";
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--black-text);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  line-height: 1.14;
+}
+.approach-text {
+  font-family: "roboto";
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--grey-text);
+  letter-spacing: 0.03em;
+  line-height: 1.71;
+}
+.what-we-do {
+  font-family: "roboto";
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--black-text);
+  letter-spacing: 0.03em;
+  line-height: 1.16;
+}
+.team {
+  font-family: "roboto";
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--black-text);
+  letter-spacing: 0.03em;
+  line-height: 1.16;
+}
+.team-name {
+  font-family: "roboto";
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--black-dark-textt);
+  letter-spacing: 0.03em;
+  line-height: 1.18;
+}
+.team-text {
+  font-family: "roboto";
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--grey-text);
+  letter-spacing: 0.03em;
+  line-height: 1.18;
+}
+.footer-bac {
+  background-color: var(--dark-grey-bac);
+  width: 1600px;
+  height: 252px;
+}
+.map {
+  font-family: "roboto";
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--white-text);
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  line-height: 1.71;
+}
+.footer-address {
+  font-family: "roboto";
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--grey-text-op60);
+  letter-spacing: 0.03em;
+  line-height: 1.71;
+}
+.address {
+  font-style: normal;
+}
+
+/* Portfolio */
+
+.portfol-button {
+  background-color: var(--white-text);
+  border: 0;
+}
+.portfol-button:hover {
+  background-color: var(--blue-text);
+  border: 0;
+}
+.text-button {
+  color: var(--blue-text);
+  font-family: "roboto";
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  line-height: 1.62;
+}
+.text-button:hover {
+  color: var(--white-text);
+  font-family: "roboto";
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  line-height: 1.62;
+}
+.project-name {
+  font-family: "roboto";
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--black-text);
+  line-height: 2;
+}
+.signature {
+  font-family: "roboto";
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  color: var(--grey-text);
+  line-height: 1.87;
+}

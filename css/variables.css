@@ -1,0 +1,15 @@
+:root {
+  --black-text: rgba(33, 33, 33, 1);
+  --blue-text: rgba(33, 150, 243, 1);
+  --grey-text: rgba(117, 117, 117, 1);
+  --white-text: rgba(255, 255, 255, 1);
+  --grey-text-op60: rgba(255, 255, 255, 0.6);
+  --black-dark-text: rgba(0, 0, 0, 1);
+  --dark-grey-bac: rgba(47, 48, 58, 1);
+}
+
+/* по кнопках
+.Button {
+    border:none; забрали рамку
+    background: transparent; прозорий беграунд
+} */
