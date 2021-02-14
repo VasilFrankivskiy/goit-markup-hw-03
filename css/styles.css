@@ -9,7 +9,7 @@ img {
   height: auto;
 }
 
-/* p,
+p,
 h1,
 h2,
 h3,
@@ -18,7 +18,7 @@ li,
 ul {
   padding: 0;
   margin: 0;
-} */
+}
 body {
   max-width: 1600px;
 }
@@ -102,6 +102,7 @@ a {
   text-transform: uppercase;
   line-height: 1.36;
   letter-spacing: 0.06em;
+  padding: 100px;
 }
 .button-bac {
   background-color: var(--blue-text);
@@ -266,7 +267,9 @@ a {
   max-width: 1230px;
   outline: 1px solid red;
 }
-.centered {
+.flex {
+  display: flex;
+  align-items: center;
 }
 .navigation {
   display: flex;
@@ -301,7 +304,4 @@ a {
 }
 .colorvision3 {
   background-color: rgb(192, 226, 184);
-}
-.footer-bac {
-  background-color: rgb(224, 196, 173);
 }
