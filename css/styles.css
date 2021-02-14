@@ -3,7 +3,7 @@
 *::after {
   box-sizing: border-box;
 }
-p,
+/* p,
 h1,
 h2,
 h3,
@@ -12,6 +12,9 @@ li,
 ul {
   padding: 0;
   margin: 0;
+} */
+body {
+  max-width: 1600px;
 }
 
 a {
@@ -20,6 +23,7 @@ a {
 .header {
   background-color: var(--white-text);
   max-width: 1600px;
+  max-height: 80;
 }
 .logo-web {
   font-family: "Raleway";
@@ -55,6 +59,7 @@ a {
   letter-spacing: 0.02em;
 }
 .nav {
+  display: flex;
   font-family: "roboto";
   font-size: 14px;
   font-weight: 500;
@@ -75,14 +80,7 @@ a {
   color: var(--grey-text);
   letter-spacing: 0.02em;
 }
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  min-width: 1230px;
-  outline: 2px solid red;
-}
+
 /* Герой */
 .hero {
   background-color: var(--dark-grey-bac);
@@ -249,4 +247,17 @@ a {
   letter-spacing: 0.03em;
   color: var(--grey-text);
   line-height: 1.87;
+}
+/* Вирівнювання */
+.container {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 1230px;
+  outline: 1px solid red;
+}
+.centered {
+  padding-top: 200px;
 }
