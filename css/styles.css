@@ -3,6 +3,12 @@
 *::after {
   box-sizing: border-box;
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /* p,
 h1,
 h2,
@@ -23,7 +29,8 @@ a {
 .header {
   background-color: var(--white-text);
   max-width: 1600px;
-  max-height: 80;
+
+  background-color: saddlebrown;
 }
 .logo-web {
   font-family: "Raleway";
@@ -59,7 +66,6 @@ a {
   letter-spacing: 0.02em;
 }
 .nav {
-  display: flex;
   font-family: "roboto";
   font-size: 14px;
   font-weight: 500;
@@ -83,9 +89,10 @@ a {
 
 /* Герой */
 .hero {
+  display: flex;
   background-color: var(--dark-grey-bac);
-  width: 1600px;
-  height: 600px;
+  max-width: 1600px;
+  max-height: 600px;
 }
 .hero-text {
   font-family: "roboto";
@@ -100,12 +107,14 @@ a {
   background-color: var(--blue-text);
   width: 200px;
   height: 50px;
+  padding: 0;
 }
 .button-bac:hover {
   background-color: var(--white-text);
   width: 200px;
   height: 50px;
   border: 0;
+  padding: 0;
 }
 .button-zakaz {
   font-family: "roboto";
@@ -248,9 +257,8 @@ a {
   color: var(--grey-text);
   line-height: 1.87;
 }
-/* Вирівнювання */
+/*-------- Вирівнювання ---------*/
 .container {
-  display: flex;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -259,5 +267,41 @@ a {
   outline: 1px solid red;
 }
 .centered {
-  padding-top: 200px;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+}
+.contact {
+  display: flex;
+  align-items: center;
+}
+.ul-nav {
+  display: flex;
+  align-items: center;
+}
+.ul-approach {
+  display: flex;
+  align-items: center;
+}
+.pic-what_we_do {
+  display: flex;
+  align-items: center;
+}
+.ul-them {
+  display: flex;
+  align-items: center;
+}
+/* Підсвітка контейнерів  */
+.colorvision {
+  background-color: rgb(184, 211, 226);
+}
+.colorvision2 {
+  background-color: rgb(184, 226, 212);
+}
+.colorvision3 {
+  background-color: rgb(192, 226, 184);
+}
+.footer-bac {
+  background-color: rgb(224, 196, 173);
 }

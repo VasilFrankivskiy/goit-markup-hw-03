@@ -18,15 +18,15 @@
     <header class="header">
     <!--Шапка з навігацією-->
     <div class="container">
-        <nav>
+        <nav class="navigation">
             <a href="./index.html"><span class="logo-web">Web</span><span class="logo-studio">Studio</span></a>
-            <ul>
+            <ul class="ul-nav">
             <li><a class="active" href="./index.html"><span class="nav">Студия</span></a></li>
             <li><a href="./portfolio.html"><span class="nav">Портфолио</span></a></li>
             <li><a href="#contacts"><span class="nav">Контакты</span></a></li>
             </ul>
         </nav>
-        <ul>
+        <ul class="contact">
             <li><a href="mailto:Info@exampie.com"><span class="nav-contacts">Info@exampie.com</span></a></li>
             <li><a href="tel:+380991111111"><span class="nav-contacts">+38 099 111 11 11</span></a></li>
         </ul>
@@ -45,10 +45,10 @@
         </section>
         
         <!--Блок навішування лапші яка фірма класна-->
-            <div class="container"> 
-            <section>
-                <h2 class="hide">подход к проектам</h2>
-                <ul>
+            <section class="colorvision">
+                <div class="container">            
+                  <h2 class="hide">подход к проектам</h2>
+                  <ul class="ul-approach">
                     <!--в css незабути перевести в горизонтальний список-->
                     <li>
                         <h3><span class="approach">Внимание к деталям</span></h3>
@@ -69,30 +69,35 @@
                         <h3><span class="approach">Современные технологии</span></h3>
                         <p class="approach-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                     </li>
-                </ul>
+                  </ul>
             
                 <!--Кінець Блок навішування лапші яка фірма класна-->
-            </section></div>
+                </div>
+            </section>
+        
 
         <!--Блок чим ми займаємось-->
-        <div class="container">
-        <section>
-            <h2 class="what-we-do">Чем ми занимаемся</h2>
-            <img src="./images/what_we_do/img1.jpg" alt="Фото чоловіка що сидить за компютером і клавіатурою" width="370">
-            <img src="./images/what_we_do/img.jpg" alt="Фото з ноутбуком на столі і смартфоном в руках" width="370">
-            <img src="./images/what_we_do/img2.jpg" alt="Фото планшета з кольоровою палітрою" width="370">
         
+        <section class="colorvision2">
+            <div class="container">
+            <h2 class="what-we-do">Чем ми занимаемся</h2>
+             <div class="pic-what_we_do">
+                <img src="./images/what_we_do/img1.jpg" alt="Фото чоловіка що сидить за компютером і клавіатурою" width="370">
+                <img src="./images/what_we_do/img.jpg" alt="Фото з ноутбуком на столі і смартфоном в руках" width="370">
+                <img src="./images/what_we_do/img2.jpg" alt="Фото планшета з кольоровою палітрою" width="370">
+             </div>
             <!--Кінець Блок чим ми займаємось-->
+            </div>
         </section>
-        </div>
+        
 
         
         <!--Блок наша команда-->
        <div class="container">
-           <section>
+           <section class="colorvision3">
             <h2 class="team">Наша Команда</h2>
     
-             <ul>
+             <ul class="ul-them">
             <li><img src="./images/our_team/img.jpg" alt="Фото Ігора Демяненко" width="270">
                 <h3 class="team-name">Игорь демяненко</h3>
                 <p class="team-text">Product Designer</p>
@@ -119,9 +124,9 @@
 </main>
     <!--Підвал з посиланями і адресами -->
     <footer class="footer-bac" id="contacts">
-        <div>
+        <div class="container ">
             <a href="./index.html"><span class="logo-web">Web</span><span class="logo-studio-white">Studio</span></a>
-            <address class="address">
+            <address class="address contact">
                 <span class="map">г. Киев,пр-т Леси Украинки,26</span>
                  <ul>
                   <li><a class="footer-address" href="mailto:Info@exampie.com">Info@exampie.com</a></li>
