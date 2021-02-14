@@ -7,8 +7,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/variables.css">
     
     
@@ -17,100 +17,119 @@
 <body>
     <header class="header">
     <!--Шапка з навігацією-->
-     <nav>
-         <a href="./index.html"><span class="logo-web">Web</span><span class="logo-studio">Studio</span></a>
-         <ul>                     <!--В майбутньому ВКАЗАТИ ПОСИЛАНЯ НА СТОРІНКИ-->
-           <li><a class="active" href="./index.html"><span class="nav">Студия</span></a></li>
-           <li><a href="./portfolio.html"><span class="nav">Портфолио</span></a></li>
-           <li><a href="#contacts"><span class="nav">Контакты</span></a></li>
-       </ul>
-    </nav>
+    <div class="container">
+        <nav>
+        <a href="./index.html"><span class="logo-web">Web</span><span class="logo-studio">Studio</span></a>
         <ul>
-          <li><a href="mailto:Info@exampie.com"><span class="nav-contacts">Info@exampie.com</span></a></li>
-          <li><a href="tel:+380991111111"><span class="nav-contacts">+38 099 111 11 11</span></a></li>
-       </ul>
+            <!--В майбутньому ВКАЗАТИ ПОСИЛАНЯ НА СТОРІНКИ-->
+            <li><a class="active" href="./index.html"><span class="nav">Студия</span></a></li>
+            <li><a href="./portfolio.html"><span class="nav">Портфолио</span></a></li>
+            <li><a href="#contacts"><span class="nav">Контакты</span></a></li>
+        </ul>
+        </nav>
+        <ul>
+            <li><a href="mailto:Info@exampie.com"><span class="nav-contacts">Info@exampie.com</span></a></li>
+            <li><a href="tel:+380991111111"><span class="nav-contacts">+38 099 111 11 11</span></a></li>
+        </ul>
+    </div>
 
     <!--Кінець Шапка з навігацією-->
     </header>
  <main>
-    <!--Блок заказу послуги-->
-    <section class="hero">
-        <h1><span class="hero-text">Эффективные решения <br> для вашего бизнеса</span></h1>
-        <button class="button-bac"><span class="button-zakaz">Заказать услугу</span></button>
-        <!--Кінець Блок заказу послуги-->
-    </section>
-
-
-        <!--Блок навішування лапші яка фірма класна-->
-        <section>
-            <h2 class="hide">подход к проектам</h2>
-        <ul>          <!--в css незабути перевести в горизонтальний список-->
-        <li>
-            <h3><span class="approach">Внимание к деталям</span></h3>
-            <p class="approach-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
-            </li>
-        <li>
-            <h3><span class="approach">Пунктуальность</span></h3>
-            <p class="approach-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
-            </li>
-        <li>
-            <h3><span class="approach">Планирование</span></h3>
-            <p class="approach-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
-        </li>
-        <li>
-            <h3><span class="approach">Современные технологии</span></h3>
-            <p class="approach-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
-        </li>
-        </ul> 
-
-        <!--Кінець Блок навішування лапші яка фірма класна-->
+    <!--Блок заказу послуги-->       
+            <section class="hero">
+            <div class="container">
+                <h1><span class="hero-text">Эффективные решения <br> для вашего бизнеса</span></h1>
+                <button class="button-bac"><span class="button-zakaz">Заказать услугу</span></button>
+            </div>
+            <!--Кінець Блок заказу послуги-->
         </section>
+        
+        <!--Блок навішування лапші яка фірма класна-->
+            <div class="container"> 
+            <section>
+                <h2 class="hide">подход к проектам</h2>
+                <ul>
+                    <!--в css незабути перевести в горизонтальний список-->
+                    <li>
+                        <h3><span class="approach">Внимание к деталям</span></h3>
+                        <p class="approach-text">Идейные соображения, а также начало повседневной работы по формированию позиции.
+                        </p>
+                    </li>
+                    <li>
+                        <h3><span class="approach">Пунктуальность</span></h3>
+                        <p class="approach-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+                        </p>
+                    </li>
+                    <li>
+                        <h3><span class="approach">Планирование</span></h3>
+                        <p class="approach-text">Равным образом консультация с широким активом в значительной степени обуславливает.
+                        </p>
+                    </li>
+                    <li>
+                        <h3><span class="approach">Современные технологии</span></h3>
+                        <p class="approach-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                    </li>
+                </ul>
+            
+                <!--Кінець Блок навішування лапші яка фірма класна-->
+            </section></div>
 
         <!--Блок чим ми займаємось-->
+        <div class="container">
         <section>
             <h2 class="what-we-do">Чем ми занимаемся</h2>
             <img src="./images/what_we_do/img1.jpg" alt="Фото чоловіка що сидить за компютером і клавіатурою" width="370">
             <img src="./images/what_we_do/img.jpg" alt="Фото з ноутбуком на столі і смартфоном в руках" width="370">
             <img src="./images/what_we_do/img2.jpg" alt="Фото планшета з кольоровою палітрою" width="370">
-
-        <!--Кінець Блок чим ми займаємось-->
+        
+            <!--Кінець Блок чим ми займаємось-->
         </section>
+        </div>
 
         
         <!--Блок наша команда-->
-        <section>
+       <div class="container">
+           <section>
             <h2 class="team">Наша Команда</h2>
-            
-            <ul>
-                <li><img src="./images/our_team/img.jpg" alt="Фото Ігора Демяненко" width="270">
+    
+             <ul>
+            <li><img src="./images/our_team/img.jpg" alt="Фото Ігора Демяненко" width="270">
                 <h3 class="team-name">Игорь демяненко</h3>
-                <p class="team-text">Product Designer</p></li>
-        
-                <li><img src="./images/our_team/img1.jpg" alt="Фото Ольги Репіної" width="270">
+                <p class="team-text">Product Designer</p>
+            </li>
+    
+            <li><img src="./images/our_team/img1.jpg" alt="Фото Ольги Репіної" width="270">
                 <h3 class="team">Ольга Репина</h3>
-                <p class="team-text">Frontend Developer</p></li>
-            
-                <li><img src="./images/our_team/img2.jpg" alt="Фото Ніколая Тарасова" width="270">        
+                <p class="team-text">Frontend Developer</p>
+            </li>
+    
+            <li><img src="./images/our_team/img2.jpg" alt="Фото Ніколая Тарасова" width="270">
                 <h3 class="team">Николай Тарасов</h3>
-                <p class="team-text">Marketing</p></li>
-            
-                <li><img src="./images/our_team/img3.jpg" alt="Фото Міхаїла Ермакова" width="270">        
+                <p class="team-text">Marketing</p>
+            </li>
+    
+            <li><img src="./images/our_team/img3.jpg" alt="Фото Міхаїла Ермакова" width="270">
                 <h3 class="team">Михаил Ермаков</h3>
-                <p class="team-text">UI Designer</p></li>
+                <p class="team-text">UI Designer</p>
+            </li>
             </ul>
         <!--Кінець Блок наша команда-->
-        </section>
+             </section>
+        </div>
 </main>
     <!--Підвал з посиланями і адресами -->
     <footer class="footer-bac" id="contacts">
-        <a href="./index.html"><span class="logo-web">Web</span><span class="logo-studio-white">Studio</span></a>
-        <address class="address">
-            <span class="map">г. Киев,пр-т Леси Украинки,26</span>
-            <ul>
-                <li><a class="footer-address" href="mailto:Info@exampie.com">Info@exampie.com</a></li>
-                <li><a class="footer-address" href="tel:+380991111111">+38 099 111 11 11</a></li>
-            </ul>
-        </address>
+        <div>
+            <a href="./index.html"><span class="logo-web">Web</span><span class="logo-studio-white">Studio</span></a>
+            <address class="address">
+                <span class="map">г. Киев,пр-т Леси Украинки,26</span>
+                 <ul>
+                  <li><a class="footer-address" href="mailto:Info@exampie.com">Info@exampie.com</a></li>
+                   <li><a class="footer-address" href="tel:+380991111111">+38 099 111 11 11</a></li>
+                 </ul>
+            </address>
+        </div>
     <!--Кінець Підвал з посиланями і адресами -->
     </footer>
 </body>

@@ -1,11 +1,25 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+li,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
 a {
   text-decoration: none;
 }
 .header {
   background-color: var(--white-text);
-  width: 1600px;
-  height: 80px;
-  display: flex;
+  max-width: 1600px;
 }
 .logo-web {
   font-family: "Raleway";
@@ -61,6 +75,16 @@ a {
   color: var(--grey-text);
   letter-spacing: 0.02em;
 }
+.container {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  min-width: 1230px;
+  outline: 2px solid red;
+}
+/* Герой */
 .hero {
   background-color: var(--dark-grey-bac);
   width: 1600px;
@@ -100,6 +124,7 @@ a {
   color: var(--blue-text);
   letter-spacing: 0.06em;
 }
+/* подход к проектам */
 .hide {
   height: 0px;
   overflow: hidden;
@@ -121,6 +146,7 @@ a {
   letter-spacing: 0.03em;
   line-height: 1.71;
 }
+/* Чем ми занимаемся */
 .what-we-do {
   font-family: "roboto";
   font-size: 36px;
@@ -129,6 +155,7 @@ a {
   letter-spacing: 0.03em;
   line-height: 1.16;
 }
+/* Секція команда */
 .team {
   font-family: "roboto";
   font-size: 36px;
@@ -153,9 +180,10 @@ a {
   letter-spacing: 0.03em;
   line-height: 1.18;
 }
+/* Секція Підвалу спільна */
 .footer-bac {
   background-color: var(--dark-grey-bac);
-  width: 1600px;
+  max-width: 1600px;
   height: 252px;
 }
 .map {
@@ -180,7 +208,8 @@ a {
 }
 
 /* Portfolio */
-
+/* Спільний Хедер */
+/* Секція кнопок */
 .portfol-button {
   background-color: var(--white-text);
   border: 0;
@@ -205,6 +234,7 @@ a {
   letter-spacing: 0.03em;
   line-height: 1.62;
 }
+/* Головнй контент */
 .project-name {
   font-family: "roboto";
   font-size: 18px;
