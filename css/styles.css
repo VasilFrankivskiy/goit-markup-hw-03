@@ -7,6 +7,8 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  margin: 0;
+  border-style: none;
 }
 
 p,
@@ -14,7 +16,6 @@ h1,
 h2,
 h3,
 h4,
-li,
 ul {
   padding: 0;
   margin: 0;
@@ -152,6 +153,7 @@ a {
   display: inline-block;
   padding-top: 10px;
   padding-bottom: 94px;
+
   font-family: "roboto";
   font-size: 14px;
   font-weight: 400;
@@ -160,11 +162,14 @@ a {
   line-height: 1.71;
   width: 270px;
 }
-ul.child:not(:last-child) {
+.flex li:not(:last-child) {
   margin-right: 30px;
 }
+
 /* Чем ми занимаемся */
 .what-we-do {
+  text-align: center;
+  padding-bottom: 50px;
   font-family: "roboto";
   font-size: 36px;
   font-weight: 700;
@@ -172,8 +177,14 @@ ul.child:not(:last-child) {
   letter-spacing: 0.03em;
   line-height: 1.16;
 }
+.flex img:not(:last-child) {
+  margin-right: 30px;
+}
 /* Секція команда */
 .team {
+  padding-top: 94px;
+  padding-bottom: 50px;
+  text-align: center;
   font-family: "roboto";
   font-size: 36px;
   font-weight: 700;
@@ -196,6 +207,8 @@ ul.child:not(:last-child) {
   color: var(--grey-text);
   letter-spacing: 0.03em;
   line-height: 1.18;
+}
+.team-photo {
 }
 /* Секція Підвалу спільна */
 .footer-bac {
@@ -293,29 +306,13 @@ ul.child:not(:last-child) {
 .ul-approach {
   padding: 94px 0px;
 }
-.navigation {
-  display: flex;
-  align-items: center;
-}
-.contact {
-  display: flex;
-  align-items: center;
-}
-.ul-nav {
-  display: flex;
-  align-items: center;
-}
-.ul-approach {
-  display: flex;
-  align-items: center;
-}
+
 .pic-what_we_do {
   display: flex;
   align-items: center;
 }
 .ul-them {
   display: flex;
-  align-items: center;
 }
 .display-box {
   display: inline-block;
