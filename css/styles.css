@@ -39,7 +39,7 @@ a {
   color: var(--blue-text);
   font-size: 26px;
   letter-spacing: 0.03em;
-  line-height: 1.15;
+  line-height: 1, 17;
 }
 .logo-studio {
   font-family: "Raleway";
@@ -48,7 +48,7 @@ a {
   color: var(--black-dark-text);
   font-size: 26px;
   letter-spacing: 0.03em;
-  line-height: 1.15;
+  line-height: 1, 17;
 }
 .logo-studio-white {
   font-family: "Raleway";
@@ -57,6 +57,7 @@ a {
   color: var(--white-text);
   font-size: 26px;
   letter-spacing: 0.03em;
+  line-height: 1, 17;
 }
 .active .nav {
   font-family: "roboto";
@@ -130,12 +131,15 @@ a {
   color: var(--blue-text);
   letter-spacing: 0.06em;
 } */
+
 /* подход к проектам */
 .hide {
   height: 0px;
   overflow: hidden;
 }
 .approach {
+  display: inline-block;
+  padding-top: 94px;
   font-family: "roboto";
   font-size: 14px;
   font-weight: 700;
@@ -145,12 +149,19 @@ a {
   line-height: 1.14;
 }
 .approach-text {
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 94px;
   font-family: "roboto";
   font-size: 14px;
   font-weight: 400;
   color: var(--grey-text);
   letter-spacing: 0.03em;
   line-height: 1.71;
+  width: 270px;
+}
+ul.child:not(:last-child) {
+  margin-right: 30px;
 }
 /* Чем ми занимаемся */
 .what-we-do {
@@ -192,6 +203,7 @@ a {
   max-width: 1600px;
 }
 .map {
+  display: inline-block;
   font-family: "roboto";
   font-size: 14px;
   font-weight: 400;
@@ -199,20 +211,26 @@ a {
   line-height: 1.71;
   letter-spacing: 0.03em;
   line-height: 1.71;
+  padding-bottom: 9px;
 }
 .footer-address {
+  display: inline-block;
   font-family: "roboto";
   font-size: 14px;
   font-weight: 400;
   color: var(--grey-text-op60);
   letter-spacing: 0.03em;
   line-height: 1.71;
+  padding-bottom: 9px;
 }
 .address {
   font-style: normal;
+  padding-bottom: 46px;
 }
 .footer-logo {
   display: inline-block;
+  padding-top: 60px;
+  padding-bottom: 20px;
 }
 
 /* Portfolio */
@@ -271,6 +289,9 @@ a {
 .flex {
   display: flex;
   align-items: center;
+}
+.ul-approach {
+  padding: 94px 0px;
 }
 .navigation {
   display: flex;
