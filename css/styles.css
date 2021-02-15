@@ -66,6 +66,8 @@ a {
   letter-spacing: 0.02em;
 }
 .nav {
+  display: inline-block;
+  padding: 32px;
   font-family: "roboto";
   font-size: 14px;
   font-weight: 500;
@@ -89,48 +91,45 @@ a {
 
 /* Герой */
 .hero {
-  display: flex;
   background-color: var(--dark-grey-bac);
   max-width: 1600px;
   max-height: 600px;
+  text-align: center;
 }
 .hero-text {
+  text-align: center;
+  display: inline-block;
+  padding-top: 200px;
+  padding-bottom: 30px;
   font-family: "roboto";
-  font-size: 60px;
+  font-size: 44px;
   font-weight: 900;
   color: var(--white-text);
   text-transform: uppercase;
   line-height: 1.36;
   letter-spacing: 0.06em;
-  padding: 100px;
-}
-.button-bac {
-  background-color: var(--blue-text);
-  width: 200px;
-  height: 50px;
-  padding: 0;
-}
-.button-bac:hover {
-  background-color: var(--white-text);
-  width: 200px;
-  height: 50px;
-  border: 0;
-  padding: 0;
 }
 .button-zakaz {
+  margin-bottom: 200px;
+  min-width: 200px;
+  border: 0;
+  padding: 10px 32px;
+  background-color: var(--blue-text);
+  color: var(--white-text);
+  display: inline-block;
+  border-radius: 4px;
   font-family: "roboto";
   font-weight: 700;
   font-size: 16px;
-  color: var(--white-text);
   letter-spacing: 0.06em;
   line-height: 1.87;
 }
-.button-zakaz:hover {
-  width: 200px;
-  height: 50px;
+
+/* .button-zakaz:hover {
+  background-color: var(--white-text);
   color: var(--blue-text);
   letter-spacing: 0.06em;
-}
+} */
 /* подход к проектам */
 .hide {
   height: 0px;
@@ -191,7 +190,6 @@ a {
 .footer-bac {
   background-color: var(--dark-grey-bac);
   max-width: 1600px;
-  height: 252px;
 }
 .map {
   font-family: "roboto";
@@ -212,6 +210,9 @@ a {
 }
 .address {
   font-style: normal;
+}
+.footer-logo {
+  display: inline-block;
 }
 
 /* Portfolio */
@@ -264,7 +265,7 @@ a {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  max-width: 1230px;
+  max-width: 1200px;
   outline: 1px solid red;
 }
 .flex {
@@ -295,6 +296,10 @@ a {
   display: flex;
   align-items: center;
 }
+.display-box {
+  display: inline-block;
+}
+
 /* Підсвітка контейнерів  */
 .colorvision {
   background-color: rgb(184, 211, 226);
