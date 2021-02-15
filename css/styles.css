@@ -193,6 +193,8 @@ a {
   line-height: 1.16;
 }
 .team-name {
+  text-align: center;
+  margin-bottom: 10px;
   font-family: "roboto";
   font-size: 16px;
   font-weight: 500;
@@ -201,6 +203,8 @@ a {
   line-height: 1.18;
 }
 .team-text {
+  margin-bottom: 30px;
+  text-align: center;
   font-family: "roboto";
   font-size: 16px;
   font-weight: 400;
@@ -209,6 +213,10 @@ a {
   line-height: 1.18;
 }
 .team-photo {
+  border-radius: 0px 0px 4px 4px;
+
+  text-align: center;
+  margin-bottom: 30px;
 }
 /* Секція Підвалу спільна */
 .footer-bac {
@@ -303,19 +311,10 @@ a {
   display: flex;
   align-items: center;
 }
-.ul-approach {
-  padding: 94px 0px;
-}
 
-.pic-what_we_do {
+.what_we_do {
   display: flex;
   align-items: center;
-}
-.ul-them {
-  display: flex;
-}
-.display-box {
-  display: inline-block;
 }
 
 /* Підсвітка контейнерів  */
@@ -328,3 +327,45 @@ a {
 .colorvision3 {
   background-color: rgb(192, 226, 184);
 }
+/* Карточки  */
+.card {
+  box-shadow: none;
+ overflow: hidden;
+ border-radius: 4px;
+}
+/* Сітка */
+.card-set {
+  outline: 1px red;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-top: -20px;
+  margin-left: -20px;
+}
+
+.card-set > .item {
+  outline: 1px green;
+  flex-basis: calc(100% / 3 - 20px);
+
+  margin-left: 20px;
+  margin-top: 20px;
+}
+--card-set-gap: 20px;
+var (--card-set-gap);
+
+
+
+
+.card-thumb {
+  
+}
+.card-text2 {
+
+}
+.card-content {
+  padding: 10px;
+} 
