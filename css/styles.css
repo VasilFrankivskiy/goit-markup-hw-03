@@ -83,7 +83,7 @@ a {
 }
 .nav {
   display: inline-block;
-  padding: 32px;
+  padding: 32px 25px;
   font-family: "roboto";
   font-size: 14px;
   font-weight: 500;
@@ -159,9 +159,13 @@ a {
   height: 0px;
   overflow: hidden;
 }
+.section-approach {
+  background: #e5e5e5;
+  padding: 94px;
+  background-color: var(--white-text);
+}
 .approach {
   display: inline-block;
-  padding-top: 94px;
   font-family: "roboto";
   font-size: 14px;
   font-weight: 700;
@@ -173,8 +177,6 @@ a {
 .approach-text {
   display: inline-block;
   padding-top: 10px;
-  padding-bottom: 94px;
-
   font-family: "roboto";
   font-size: 14px;
   font-weight: 400;
@@ -182,9 +184,6 @@ a {
   letter-spacing: 0.03em;
   line-height: 1.71;
   width: 270px;
-}
-.flex li:not(:last-child) {
-  margin-right: 30px;
 }
 
 /* Чем ми занимаемся */
@@ -405,9 +404,7 @@ a {
 }
 
 /* Підсвітка контейнерів  */
-.colorvision {
-  background-color: var(--white-text);
-}
+
 .colorvision2 {
   background-color: var(--white-text);
 }
