@@ -160,7 +160,9 @@ a {
   overflow: hidden;
 }
 .section-approach {
-  background: #e5e5e5;
+  justify-content: space-between;
+
+  background: var(--bac-section);
   padding: 94px;
   background-color: var(--white-text);
 }
@@ -401,17 +403,13 @@ a {
 .flex {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 /* Підсвітка контейнерів  */
-
 .colorvision2 {
   background-color: var(--white-text);
 }
 .colorvision3 {
   background-color: #f5f4fa;
 }
-
-/* .card-text {
-  margin-top: 10px;
-} */
