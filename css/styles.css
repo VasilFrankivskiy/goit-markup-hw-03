@@ -283,11 +283,19 @@ a {
   padding: 94px 0;
 }
 /* Контейнер  кнопок */
+
+.ul-button {
+  display: flex;
+  text-align: center;
+  margin-left: 280px;
+  padding-bottom: 50px;
+}
 .portfol-button {
+  margin-right: 8px;
   background-color: var(--buutom-bac);
   border: 0;
   border-radius: 4px;
-  padding: 6px 0;
+  padding: 6px 22px;
 }
 .portfol-button:hover {
   background-color: var(--blue-text);
