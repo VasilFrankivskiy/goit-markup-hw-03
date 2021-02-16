@@ -21,7 +21,6 @@ ul {
 body {
   max-width: 1600px;
 }
-
 a {
   text-decoration: none;
 }
@@ -212,6 +211,35 @@ a {
 
   text-align: center;
 }
+/* THEM CARD SET */
+.card-team {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--team-card-set-gap));
+  margin-top: calc(-1 * var(--team-card-set-gap));
+}
+.card-team > .item {
+  flex-basis: calc(100% / 4 - var(--card-set-gap));
+  margin-left: var(--team-card-set-gap);
+  margin-top: var(--team-card-set-gap);
+}
+
+/*THEM CARD */
+.team-card {
+  margin-bottom: 94px;
+  box-shadow: var(--team-card-shadow);
+  border-radius: 0px 0px 4px 4px;
+  overflow: hidden;
+  background-color: var(--white-text);
+}
+
+.team-card-content {
+  padding: 30px;
+}
 /* Секція Підвалу спільна */
 .footer-bac {
   background-color: var(--dark-grey-bac);
@@ -250,17 +278,23 @@ a {
 
 /* Portfolio */
 /* Спільний Хедер */
-/* Секція кнопок */
+/* Секція портфоліо */
+.portfolio {
+  padding: 94px 0;
+}
+/* Контейнер  кнопок */
 .portfol-button {
-  background-color: var(--white-text);
+  background-color: var(--buutom-bac);
   border: 0;
+  border-radius: 4px;
+  padding: 6px 0;
 }
 .portfol-button:hover {
   background-color: var(--blue-text);
   border: 0;
 }
 .text-button {
-  color: var(--blue-text);
+  color: var(--black-text);
   font-family: "roboto";
   font-weight: 500;
   font-size: 16px;
@@ -292,6 +326,36 @@ a {
   color: var(--grey-text);
   line-height: 1.87;
 }
+/*Карточки головного контенту   */
+/* CARD SET */
+.card-set {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--card-set-gap));
+  margin-top: calc(-1 * var(--card-set-gap));
+}
+
+.card-set > .item {
+  flex-basis: calc(100% / 3 - var(--card-set-gap));
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
+}
+
+/* CARD */
+.card {
+  box-shadow: var(--card-shadow);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.card-content {
+  padding: 15px;
+}
+
 /*-------- Вирівнювання ---------*/
 .container {
   margin-left: auto;
@@ -302,11 +366,6 @@ a {
   outline: 1px solid red;
 }
 .flex {
-  display: flex;
-  align-items: center;
-}
-
-.what_we_do {
   display: flex;
   align-items: center;
 }
@@ -322,36 +381,6 @@ a {
   background-color: #f5f4fa;
 }
 
-/* CARD SET */
-.card-set {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: calc(-1 * var(--card-set-gap));
-  margin-top: calc(-1 * var(--card-set-gap));
-}
-.card-set > .item {
-  flex-basis: calc(100% / 4 - var(--card-set-gap));
-  margin-left: var(--card-set-gap);
-  margin-top: var(--card-set-gap);
-}
-
-/* CARD */
-.card {
-  margin-bottom: 94px;
-  box-shadow: var(--card-shadow);
-  border-radius: 0px 0px 4px 4px;
-  overflow: hidden;
-  background-color: var(--white-text);
-}
-
-.card-content {
-  padding: 30px;
-}
-
-.card-text {
+/* .card-text {
   margin-top: 10px;
-}
+} */
