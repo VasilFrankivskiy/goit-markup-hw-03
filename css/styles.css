@@ -31,6 +31,8 @@ a {
   max-width: 1600px;
 }
 .nav-container {
+  justify-content: space-between;
+  align-items: center;
   display: flex;
   text-align: center;
   margin-left: auto;
@@ -50,6 +52,7 @@ a {
   line-height: 1, 17;
 }
 .logo-studio {
+  margin-right: 93px;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
