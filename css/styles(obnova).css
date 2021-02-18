@@ -24,32 +24,23 @@ body {
 }
 a {
   text-decoration: none;
-
-  /*Поїхали :)  */
 }
 .header {
-  background-color: var(--white-text);
-}
-.nav {
-  display: flex;
-  justify-content: space-between;
   border-bottom: 1px solid #ececec;
+  background-color: var(--white-text);
+  max-width: 1600px;
+}
+.nav-container {
+  justify-content: space-between;
   align-items: center;
+  display: flex;
   text-align: center;
-  padding: 24px 0;
-  max-width: 1170px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  max-width: 1200px;
   outline: 1px solid red;
-}
-.nav-link {
-  display: flex;
-  align-items: center;
-}
-.ul-link {
-  display: flex;
 }
 .logo-web {
   font-family: "Raleway";
@@ -58,17 +49,17 @@ a {
   color: var(--blue-text);
   font-size: 26px;
   letter-spacing: 0.03em;
-  line-height: 1.15;
+  line-height: 1, 17;
 }
 .logo-studio {
-  padding-right: 43px;
+  margin-right: 93px;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
   color: var(--black-dark-text);
   font-size: 26px;
   letter-spacing: 0.03em;
-  line-height: 1.15;
+  line-height: 1, 17;
 }
 .logo-studio-white {
   font-family: "Raleway";
@@ -77,16 +68,22 @@ a {
   color: var(--white-text);
   font-size: 26px;
   letter-spacing: 0.03em;
+  line-height: 1, 17;
 }
-.active {
+.ul-nav {
+  display: flex;
+  text-align: center;
+}
+.active .nav {
   font-family: "roboto";
   font-size: 14px;
   font-weight: 500;
   color: var(--blue-text);
   letter-spacing: 0.02em;
 }
-.nav-logo {
-  padding-left: 50px;
+.nav {
+  display: inline-block;
+  padding: 32px 25px;
   font-family: "roboto";
   font-size: 14px;
   font-weight: 500;
@@ -100,8 +97,14 @@ a {
   color: var(--blue-text);
   letter-spacing: 0.02em;
 }
+.ul-contacts {
+  display: flex;
+
+  /* margin-left: auto; */
+}
 .nav-contacts {
-  padding-left: 50px;
+  padding-top: 50px;
+  margin-left: 50px;
   font-family: "roboto";
   font-size: 14px;
   font-weight: 500;
@@ -109,24 +112,18 @@ a {
   letter-spacing: 0.02em;
 }
 
-/* -----------Блок героя--------- */
-
+/* Герой */
 .hero {
   background-color: var(--dark-grey-bac);
   max-width: 1600px;
+  max-height: 600px;
   text-align: center;
 }
-.container-hero {
-  padding: 200px 0;
-  max-width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  outline: 1px solid red;
-}
-
 .hero-text {
+  text-align: center;
+  display: inline-block;
+  padding-top: 200px;
+  padding-bottom: 30px;
   font-family: "roboto";
   font-size: 44px;
   font-weight: 900;
@@ -135,9 +132,9 @@ a {
   line-height: 1.36;
   letter-spacing: 0.06em;
 }
-
 .button-zakaz {
-  margin-top: 30px;
+  margin-bottom: 200px;
+  min-width: 200px;
   border: 0;
   padding: 10px 32px;
   background-color: var(--blue-text);
@@ -150,33 +147,27 @@ a {
   letter-spacing: 0.06em;
   line-height: 1.87;
 }
-.button-zakaz:hover {
+
+/* .button-zakaz:hover {
+  background-color: var(--white-text);
   color: var(--blue-text);
   letter-spacing: 0.06em;
-  background-color: var(--white-text);
-}
+} */
+
+/* подход к проектам */
 .hide {
   height: 0px;
   overflow: hidden;
 }
-
-/* --------Блок лапші--------- */
-
-.container-approach {
-  padding: 94px 0;
-  max-width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  outline: 1px solid red;
-}
-.ul-approach {
-  display: flex;
+.section-approach {
   justify-content: space-between;
-}
 
+  background: var(--bac-section);
+  padding: 94px;
+  background-color: var(--white-text);
+}
 .approach {
+  display: inline-block;
   font-family: "roboto";
   font-size: 14px;
   font-weight: 700;
@@ -186,29 +177,21 @@ a {
   line-height: 1.14;
 }
 .approach-text {
-  max-width: 270px;
+  display: inline-block;
+  padding-top: 10px;
   font-family: "roboto";
   font-size: 14px;
   font-weight: 400;
   color: var(--grey-text);
   letter-spacing: 0.03em;
   line-height: 1.71;
+  width: 270px;
 }
 
-/*---- Блок Чим Займаємось ------ */
-
-.container-what-we-do {
-  margin-bottom: 94px;
-  max-width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  outline: 1px solid red;
-}
+/* Чем ми занимаемся */
 .what-we-do {
-  padding-bottom: 50px;
   text-align: center;
+  padding-bottom: 50px;
   font-family: "roboto";
   font-size: 36px;
   font-weight: 700;
@@ -216,23 +199,13 @@ a {
   letter-spacing: 0.03em;
   line-height: 1.16;
 }
-.img-container {
-  justify-content: space-between;
-  display: flex;
+.flex img:not(:last-child) {
+  margin-right: 30px;
 }
-
-/* ---Наша команда--- */
-
-.container-them {
-  padding: 94px 0;
-  max-width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  outline: 1px solid red;
-}
+/* Секція команда */
 .team {
+  padding-top: 94px;
+  margin-bottom: 50px;
   text-align: center;
   font-family: "roboto";
   font-size: 36px;
@@ -242,6 +215,8 @@ a {
   line-height: 1.16;
 }
 .team-name {
+  text-align: center;
+  margin-bottom: 12px;
   font-family: "roboto";
   font-size: 16px;
   font-weight: 500;
@@ -250,6 +225,7 @@ a {
   line-height: 1.18;
 }
 .team-text {
+  text-align: center;
   font-family: "roboto";
   font-size: 16px;
   font-weight: 400;
@@ -257,9 +233,12 @@ a {
   letter-spacing: 0.03em;
   line-height: 1.18;
 }
+.team-photo {
+  border-radius: 0px 0px 4px 4px;
 
-/* Карточки команди */
-
+  text-align: center;
+}
+/* THEM CARD SET */
 .card-team {
   padding: 0;
   margin: 0;
@@ -276,6 +255,7 @@ a {
   margin-top: var(--team-card-set-gap);
 }
 
+/*THEM CARD */
 .team-card {
   margin-bottom: 94px;
   box-shadow: var(--team-card-shadow);
@@ -287,28 +267,13 @@ a {
 .team-card-content {
   padding: 30px;
 }
-
-/* ----------Підвал------ */
-
-.footer {
+/* Секція Підвалу спільна */
+.footer-bac {
   background-color: var(--dark-grey-bac);
-}
-.containers-footer {
-  padding: 60px 0;
-  max-width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  outline: 1px solid red;
-}
-.logo-footer {
-  display: inline-block;
-  margin-bottom: 20px;
+  max-width: 1600px;
 }
 .map {
   display: inline-block;
-  margin-bottom: 9px;
   font-family: "roboto";
   font-size: 14px;
   font-weight: 400;
@@ -316,38 +281,40 @@ a {
   line-height: 1.71;
   letter-spacing: 0.03em;
   line-height: 1.71;
+  padding-bottom: 9px;
 }
 .footer-address {
   display: inline-block;
-  margin-bottom: 9px;
   font-family: "roboto";
   font-size: 14px;
   font-weight: 400;
   color: var(--grey-text-op60);
   letter-spacing: 0.03em;
   line-height: 1.71;
+  padding-bottom: 9px;
 }
 .address {
   font-style: normal;
+  padding-bottom: 46px;
 }
-/* -------------------------- */
-/* --------Portfolio ---------*/
-/* -------------------------- */
+.footer-logo {
+  display: inline-block;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+/* Portfolio */
+/* Спільний Хедер */
+/* Секція портфоліо */
 .portfolio {
   padding: 94px 0;
 }
-.container-portfolio {
-  max-width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  outline: 1px solid red;
-}
+/* Контейнер  кнопок */
+
 .ul-button {
   display: flex;
   text-align: center;
-  justify-content: center;
+  margin-left: 280px;
   padding-bottom: 50px;
 }
 .portfol-button {
@@ -355,13 +322,13 @@ a {
   background-color: var(--buutom-bac);
   border: 0;
   border-radius: 4px;
+  padding: 6px 22px;
 }
 .portfol-button:hover {
   background-color: var(--blue-text);
   border: 0;
 }
 .text-button {
-  padding: 6px 22px;
   color: var(--black-text);
   font-family: "roboto";
   font-weight: 500;
@@ -421,11 +388,28 @@ a {
 }
 
 .card-content {
-  padding: 20px 24px;
-  background: #ffffff;
-  border: 1px solid #eeeeee;
-  border-top: none;
+  padding: 15px;
 }
-.card-thumb {
-  height: 404px;
+
+/*-------- Вирівнювання ---------*/
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 1200px;
+  outline: 1px solid red;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Підсвітка контейнерів  */
+.colorvision2 {
+  background-color: var(--white-text);
+}
+.colorvision3 {
+  background-color: #f5f4fa;
 }
