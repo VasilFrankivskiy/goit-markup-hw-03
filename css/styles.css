@@ -236,6 +236,7 @@ a {
   outline: 1px solid red;
 }
 .team {
+  margin-bottom: 50px;
   text-align: center;
   font-family: "roboto";
   font-size: 36px;
