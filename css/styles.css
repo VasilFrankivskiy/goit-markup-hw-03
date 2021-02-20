@@ -20,6 +20,7 @@ li {
 }
 body {
   max-width: 1600px;
+  background-color: var(--white-text);
 }
 a {
   text-decoration: none;
